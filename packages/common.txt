@@ -4,7 +4,6 @@ polybar
 rofi
 alacritty
 zsh
-firefox
 obsidian
 lsd
 bat

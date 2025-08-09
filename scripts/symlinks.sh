@@ -6,7 +6,7 @@
 
 echo ">> Creating symlinks..."
 
-DOTFILES_DIR="./config/"
+DOTFILES_DIR="$HOME/dotfiles/config"
 
 declare -A CONFIGS=(
   ["awesome"]="$HOME/.config/awesome"

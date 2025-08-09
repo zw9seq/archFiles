@@ -57,10 +57,11 @@ Permite instalar de forma automática todos mis programas, fuentes y ajustes vis
    ```
 
 3. Instalar paquetes manualmente:
+
     Debes instalar los siguientes paquetes de forma manual:
-   * VS Code
-   * Warp Terminal
-  
+   - VS Code
+   - Warp Terminal  
+
     O configurar los atajos de Awesome para usar las aplicaciones que desees
 
 
