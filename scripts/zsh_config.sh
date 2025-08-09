@@ -20,6 +20,9 @@ if ! command -v zsh &> /dev/null; then
     fi
 fi
 
+# Install plugins
+ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
+
 # Install oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo ">> Installing oh-my-zsh..."
@@ -34,9 +37,6 @@ if [ ! -d "$ZSH_CUSTOM/themes/powerlevel10k" ]; then
     echo ">> Installing Powerlevel10k theme..."
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
 fi
-
-# Install plugins
-ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 
 # zsh-autosuggestions
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
