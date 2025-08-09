@@ -4,7 +4,6 @@ polybar
 rofi
 alacritty
 zsh
-vscode
 firefox
 obsidian
 lsd
