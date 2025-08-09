@@ -43,7 +43,7 @@ Permite instalar de forma automática todos mis programas, fuentes y ajustes vis
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/zw9seq/dotfiles.git ~/dotfiles
+    git clone https://github.com/zw9seq/archFiles.git ~/dotfiles
     cd ~/dotfiles
     ```
 
