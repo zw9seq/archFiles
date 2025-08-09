@@ -1,0 +1,13 @@
+awesome
+picom
+polybar
+rofi
+warp-terminal
+alacritty
+zsh
+vscode
+firefox
+obsidian
+lsd
+bat
+i3lock
