@@ -13,7 +13,6 @@ declare -A CONFIGS=(
   ["picom"]="$HOME/.config/picom"
   ["polybar"]="$HOME/.config/polybar"
   ["rofi"]="$HOME/.config/rofi"
-  ["warp-terminal"]="$HOME/.config/warp-terminal"
   ["alacritty"]="$HOME/.config/alacritty"
   ["zshrc"]="$HOME/.zshrc"
   ["p10k.zsh"]="$HOME/.p10k.zsh"

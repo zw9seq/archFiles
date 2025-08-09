@@ -2,7 +2,6 @@ awesome
 picom
 polybar
 rofi
-warp-terminal
 alacritty
 zsh
 vscode
