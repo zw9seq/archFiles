@@ -8,6 +8,7 @@ set -e
 
 bash scripts/install.sh
 bash scripts/install_fonts.sh
+bash scripts/zsh_config.sh
 
 while true; do
 
