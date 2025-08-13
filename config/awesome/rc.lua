@@ -279,27 +279,12 @@ globalkeys = gears.table.join(
             toggle_floating(current_client)
         end
     end),
-    
-    -- Controlar el volumen
-    awful.key({}, "XF86AudioLowerVolume",
-        function () awful.spawn("pamixer --decrease 5", false) end,
-        {description = "Bajar volumen", group = "sistema"}),
-
-    awful.key({}, "XF86AudioRaiseVolume",
-        function () awful.spawn("pamixer --increase 5", false) end,
-        {description = "Subir volumen", group = "sistema"}),
-
-    awful.key({}, "XF86AudioMute",
-        function () awful.spawn("pamixer --toggle-mute", false) end,
-        {description = "Mutear volumen", group = "sistema"}),
-
 
     -- Abrir Terminal
   
     awful.key({ modkey }, "Return", 
         function ()
-            awful.spawn("warp-terminal")
-            -- awful.spawn(terminal) 
+            awful.spawn(terminal) 
         end,
         {description = "abrir terminal", group = "launcher"}
     ),
@@ -405,19 +390,7 @@ globalkeys = gears.table.join(
                   end
               end,
               {description = "restore minimized", group = "client"}
-    ),
-
-    -- Brillo de pantalla
-
-    awful.key({ }, "XF86MonBrightnessUp",
-        function () awful.spawn("brightnessctl s +10%") end,
-        {description = "Aumentar brillo", group = "sistema"}),
-
-    awful.key({ }, "XF86MonBrightnessDown",
-        function () awful.spawn("brightnessctl s 10%-") end,
-        {description = "Disminuir brillo", group = "sistema"})
-
-
+    )
 )
 
 clientkeys = gears.table.join(
