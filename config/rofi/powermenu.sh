@@ -53,9 +53,8 @@ case $chosen in
         fi
         ;;
     $lock)
-			#i3lock -i "/home/r0nin/Imágenes/Fondos/Batman.jpg"
 			i3lock --indicator \
-  			-i "/home/r0nin/Imágenes/Fondos/Batman.jpg" \
+  			-i "/home/[USER]/.config/rofi/themes/Batman.jpg" \
   			--inside-color=2e2e2ecc \
   			--ring-color=7a7a7add \
   			--keyhl-color=5c8d89ff \

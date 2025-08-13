@@ -43,16 +43,16 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/home/r0nin/.config/awesome/themes/default/r0nin.lua")
+beautiful.init("/home/[USER]/.config/awesome/themes/default/theme.lua")
 
 --Definir wallpaper
-beautiful.wallpaper = "/home/r0nin/Imágenes/Fondos/Vagabond2.jpg"
+beautiful.wallpaper = "/home/[USER]/.config/awesome/themes/default/Vagabond2.jpg"
 
 --Iniciar picom
 awful.spawn.with_shell("picom &")
 
 --Iniciar polybar
-awful.spawn.with_shell("/home/r0nin/.config/polybar/launch.sh &")
+awful.spawn.with_shell("/home/[USER]/.config/polybar/launch.sh &")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"

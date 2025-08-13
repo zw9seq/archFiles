@@ -8,3 +8,4 @@ obsidian
 lsd
 bat
 i3lock
+scrot
