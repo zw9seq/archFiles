@@ -344,7 +344,7 @@ globalkeys = gears.table.join(
 
     awful.key({ modkey }, "c",
         function ()
-            awful.spawn("scrot -s /home/r0nin/Imágenes/Capturas/%b%d::%H%M%S.png")
+            awful.spawn("scrot -s /[DESIRED_PATH]/%b%d::%H%M%S.png")
         end
     ),
 
