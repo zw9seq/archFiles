@@ -14,7 +14,6 @@ declare -A CONFIGS=(
   ["polybar"]="$HOME/.config/polybar"
   ["rofi"]="$HOME/.config/rofi"
   ["alacritty"]="$HOME/.config/alacritty"
-  ["warp-terminal"]="$HOME/.config/warp-terminal"
   [".zshrc"]="$HOME/.zshrc"
   [".p10k.zsh"]="$HOME/.p10k.zsh"
   ["backup"]="$HOME/.local/bin/backup.sh"

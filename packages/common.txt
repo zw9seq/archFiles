@@ -7,5 +7,5 @@ zsh
 obsidian
 lsd
 bat
-i3lock
+i3lock-color
 scrot

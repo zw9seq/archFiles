@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="~/.config/rofi"
+dir="~/dotfiles/config/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -no-config -theme $dir/powermenu.rasi"
@@ -68,8 +68,6 @@ case $chosen in
     $suspend)
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			mpc -q pause
-			amixer set Master mute
 			systemctl suspend
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
