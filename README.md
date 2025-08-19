@@ -48,7 +48,6 @@ Insertar fotos de previsualizacion del resultado de la configuracion
 1. Clona el repositorio:
   
 ```bash
-cd ~/
 git clone https://github.com/zw9seq/archFiles.git ~/dotfiles
 cd ~/dotfiles
 ```
@@ -64,11 +63,16 @@ chmod +x config/backup.sh
 
 3. Instalar paquetes manualmente:
 
-    Debes instalar los siguientes paquetes de forma manual:
-   - VS Code
-   - Warp Terminal  
+  El paquete de **vscode** debe ser instalado manualmente; o si prefieres otro IDE, sustituir la siguiente línea en el archivo **config/rc.lua**:
 
-    O configurar los atajos de Awesome para usar las aplicaciones que desees
+  ```lua
+  awful.key({ modkey }, "v",
+     function ()
+         awful.spawn("code") --CHANGE "CODE" FOR THE EXECUTION COMMAND OF YOUR IDE
+     end,
+     { description = "open Visual Studio Code", group = "launcher" }
+  ),
+  ```
 
 ## Configuracion post-instalación
 
@@ -82,6 +86,16 @@ El archivo se encuentra en la ruta config/awesome/ . Debes cambiar las aparicion
 beautiful.init("/home/[USER]/.config/awesome/themes/default/theme.lua")
 beautiful.wallpaper = "/home/[USER]/.config/awesome/themes/default/Vagabond2.jpg"
 awful.spawn.with_shell("/home/[USER]/.config/polybar/launch.sh &")
+```
+
+Debes cambiar también la aparacición de "[DESIRED_PATH]" por la ruta en la que quieras guardar tus capturas de pantalla.
+
+```lua
+awful.key({ modkey }, "c",
+    function ()
+        awful.spawn("scrot -s /[DESIRED_PATH]/%b%d::%H%M%S.png")
+    end
+),
 ```
 
 - ### **config.ini**
@@ -148,14 +162,7 @@ tar -cpzf /[YourBackupStorage]/backup-"$cdate".tar.gz /[Directory1] /[Directory2
 
 ---
 
-Si el comando "cat" no funciona, debes revisar la linea `alias cat='/usr/bin/bat'` del archivo config/.zshrc. Busca donde se encuentra el ejecutable de `bat` y sustituye la ruta.
-
-## ⚙️ Personalización
-
-- Edita `packages/common.txt` para añadir o quitar paquetes.
-- Edita `config/backup.sh` para establecer tu ruta de backups.
-- Modifica cualquier archivo en `config/` para ajustar la configuración de tus programas.
-- Las fuentes se encuentran en `fonts/` y se instalan en `~/.local/share/fonts`.
+Si el comando `cat` no funciona, debes revisar la linea `alias cat='/usr/bin/bat'` del archivo **config/.zshrc**. Busca donde se encuentra el ejecutable de `bat` y sustituye la ruta.
 
 ## 📌 Requisitos
 
