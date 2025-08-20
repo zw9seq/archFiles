@@ -150,4 +150,4 @@ This setup is fully **keyboard-driven**. Here are the essential keybindings for 
 **zw9seq**
 📅 Built with 💻 + ☕
 
-For more details: [https://zw9seq.github.io/proyectos/archFiles](https://zw9seq.github.io/proyectos/archFiles
+For more details: https://zw9seq.github.io/proyectos/archFiles
