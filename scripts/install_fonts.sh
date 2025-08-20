@@ -8,13 +8,13 @@ set -e
 
 FONT_DIR="$HOME/.local/share/fonts"
 
-echo ">> Installing fonts in $FONT_DIR..."
+echo -e "/n>> Installing fonts in $FONT_DIR.../n"
 
 mkdir -p "$FONT_DIR"
 
-cp -r fonts/TTF/* "$FONT_DIR"
-cp -r fonts/OTF/* "$FONT_DIR"
-cp -r fonts/Iosevka/* "$FONT_DIR"
+cp -r fonts/TTF/* "$FONT_DIR" 2>/dev/null
+cp -r fonts/OTF/* "$FONT_DIR" 2>/dev/null
+cp -r fonts/Iosevka/* "$FONT_DIR" 2>/dev/null
 
 # Restart the font cache
 echo ">> Fonts installed! Restarting the fonts cache..."

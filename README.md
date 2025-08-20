@@ -1,12 +1,12 @@
 # 🌐 Linux Dotfiles & Setup Automation
 
-Este repositorio contiene mi configuración personalizada de Arch Linux lista para usarse en otros sistemas basados en Linux.  
+Este repositorio contiene mi configuración personalizada de Arch Linux lista para usarse en otros sistemas basados en Linux. Esta personalización esta especialmente creada para poder trabajar de manera eficiente, facilitar la experiencia multitarea y trabajar sin la necesidad de levantar las manos del teclado.
 Permite instalar de forma automática todos mis programas, fuentes y ajustes visuales en cualquier máquina nueva, manteniendo la misma experiencia de uso.
 
 ## Vista previa
----
 
-Insertar fotos de previsualizacion del resultado de la configuracion
+![imagen1](https://github.com/zw9seq/zw9seq/blob/6fd141f208d700630e9fbdbb715bc6e066212250/misc/Aug20%3A%3A102140.png)
+![imagen1](https://github.com/zw9seq/zw9seq/blob/6fd141f208d700630e9fbdbb715bc6e066212250/misc/Aug20%3A%3A102521.png)
 
 ---
 
@@ -42,6 +42,12 @@ Insertar fotos de previsualizacion del resultado de la configuracion
 ├── scripts/          # Scripts de instalación y configuración
 └── setup.sh          # Script principal
 ```
+
+## 📌 Requisitos
+
+- Conexión a internet
+- Un gestor de paquetes soportado (`pacman`, `apt`, `dnf`, `zypper`)
+- Permisos de `sudo` para instalar paquetes
 
 ## 🚀 Instalación
 
@@ -164,17 +170,77 @@ tar -cpzf /[YourBackupStorage]/backup-"$cdate".tar.gz /[Directory1] /[Directory2
 
 Si el comando `cat` no funciona, debes revisar la linea `alias cat='/usr/bin/bat'` del archivo **config/.zshrc**. Busca donde se encuentra el ejecutable de `bat` y sustituye la ruta.
 
-## 📌 Requisitos
+## Atajos del Sistema
 
-- Conexión a internet
-- Un gestor de paquetes soportado (`pacman`, `apt`, `dnf`, `zypper`)
-- Permisos de `sudo` para instalar paquetes
+Esta configuración se controla totalmente desde el teclado, por lo que debes conocer los atajos para sacar el mayor provecho de ella.
+  
+- Wnd + Flechas
+  Enfocar ventanas
 
-## 📝 Notas
+- Wnd + Ctl + Flechas
+  Mover ventanas
 
-- Este setup está optimizado para **Arch Linux**, pero es compatible con otras distribuciones Linux.
+- Wnd + Alt + Flechas
+  Modificar tamaño ventanas
+
+- Wnd + o
+  Hacer flotante la ventanas
+
+- Wnd + Intro
+  Abrir terminal
+
+- Wnd + d
+  Abrir menu de aplicaciones
+
+- Wnd + f
+  Abrir Firefox
+
+- Wnd + v
+  Abrir vscode
+
+- Wnd + Ctl + r
+  Recargar awesome
+
+- Wnd + w
+  Cerrar ventana
+
+- Wnd + Ctl + Shift + (Arriba | Abajo)
+  Modificar numero de ventanas maestras
+
+- Wnd + h
+  Minimizar ventana
+
+- Wnd + Ctl + h
+  Restaurar ventana minimizada
+
+- Wnd + m
+  [Des]Maximizar ventana
+
+- Wnd + Ctl + f
+  Activar/desactivar pantalla completa
+
+- Wnd + nº
+  Cambiar de escritorio
+
+- Wnd + Shift + nº
+  Mover ventana enfocada a escritorio
+
+- Wnd + Ctl + nº
+  Une las ventanas de los escritorios en una sola pantalla
+
+- Wnd + Click der
+  Redimensionar ventana flotante
+
+- Wnd + Click izq
+  Mover ventana flotante
+  
+- Wnd + c
+  Hacer recorte de pantalla
 
 ---
 
 **Autor:** zw9seq
+
 📅 Creado con 💻 y ☕
+
+Para mas informacion consultar https://zw9seq.github.io/proyectos/archFiles

@@ -6,17 +6,19 @@
 
 set -e
 
-echo ">> Configuring Zsh..."
+echo -e "/n>> Configuring Zsh.../n"
 
 # Install zsh
-if ! command -v zsh &> /dev/null; then
-    echo ">> Installing zsh..."
-    if command -v apt-get &> /dev/null; then
+if ! command -v zsh &>/dev/null; then
+    echo -e "/n>> Installing zsh.../n"
+    if command -v apt-get &>/dev/null; then
         sudo apt-get install -y zsh
     elif command -v pacman &> /dev/null; then
         sudo pacman -S --noconfirm --needed zsh
-    elif command -v dnf &> /dev/null; then
+    elif command -v dnf &>/dev/null; then
         sudo dnf install -y zsh
+    elif command -v zypper &>/dev/null; then
+        sudo zypper install -y zsh
     fi
 fi
 
