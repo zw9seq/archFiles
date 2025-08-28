@@ -14,7 +14,7 @@ if [ ! -f $installationFile ]; then
   exit 1
 fi
 
-echo -e "/n>> Detecting the package manager.../n"
+echo -e "\n>> Detecting the package manager...\n"
 sleep 1
 
 # Detect the package management system
@@ -29,21 +29,21 @@ elif command -v pacman &> /dev/null; then
 elif command -v zypper &> /dev/null; then
     INSTALL_CMD="sudo zypper install -y"
 else
-    echo -e "/nThe package manager couldn't be detected. Aborting the installation."
+    echo -e "\nThe package manager couldn't be detected. Aborting the installation."
     sleep 1
     exit 1
 fi
 
 # Read 'common.txt' and install the packages
-echo -e "/n>> Installing dependencies.../n"
+echo -e "\n>> Installing dependencies...\n"
 sleep 1
 
 while IFS= read -r package
 do
   if [ -n "$package" ]; then  # Verify that the line isn't empty
-    echo -e "/nInstalling $package..."
+    echo -e "\nInstalling $package..."
     $INSTALL_CMD "$package"
   fi
 done < "$installationFile"
 
-echo -e "/n>> Installation completed!"
+echo -e "\n>> Installation completed!"
