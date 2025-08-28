@@ -111,7 +111,9 @@ After running the setup script, a few files must be edited manually for full fun
 * **backup.sh** (`config/backup/`)
   Define which directories should be included in your backup.
 
-If the `cat` command fails, adjust the `alias cat='/usr/bin/bat'` line in `.zshrc` to point to the correct `bat` binary path.
+> If the `cat` command fails, adjust the `alias cat='/usr/bin/bat'` line in `.zshrc` to point to the correct `bat` binary path.
+
+Once everything is configured, you must **reboot** the system and loggin choosing the `Awesome` window manager.
 
 ---
 
