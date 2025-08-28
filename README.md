@@ -153,3 +153,5 @@ This setup is fully **keyboard-driven**. Here are the essential keybindings for 
 📅 Built with 💻 + ☕
 
 For more details: https://zw9seq.github.io/proyectos/archFiles
+
+⭐ If you find this tool useful, consider giving the repo a **star**!
