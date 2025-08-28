@@ -18,12 +18,12 @@ while true; do
     case $res in
         yes|Yes|y|Y)
             bash scripts/symlinks.sh
-            echo ">> The setup has finished. Exiting."
+            echo -e "\n>> The setup has finished. Exiting."
             exit 0
         ;;
 
         no|No|n|N)
-            echo ">> The setup has finished. Exiting."
+            echo -e "\n>> The setup has finished. Exiting."
             exit 0
         ;;
 
