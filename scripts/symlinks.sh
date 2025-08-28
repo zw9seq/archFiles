@@ -4,7 +4,7 @@
 # Hecho por zw9seq #
 ####################
 
-echo -e "/n>> Creating symlinks.../n"
+echo -e "\n>> Creating symlinks...\n"
 sleep 1
 
 DOTFILES_DIR="$HOME/dotfiles/config"
@@ -32,5 +32,5 @@ for key in "${!CONFIGS[@]}"; do
   ln -sf "$src" "$dest"
 done
 
-echo -e "/n>> Symlinks created./n"
+echo -e "\n>> Symlinks created.\n"
 sleep 1
